@@ -211,48 +211,48 @@ body {
 
 .black-button {
   background-color: transparent;
-  padding: 12px 20px;
+  border: 3px solid var(--clr-navy);
+  display: inline-block;
   font-family: var(--ff-mono-normal);
   font-weight: 700;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: 3px solid var(--clr-navy);
+  height: fit-content;
   letter-spacing: 0.4em;
+  padding: 12px 20px;
+  transition: 0.35s ease;
+  width: fit-content;
 }
 .navy-button {
-  color: var(--clr-navy);
-  background-color: transparent;
-  padding: 12px 20px;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  background-color: transparent;
   border: 3px solid var(--clr-navy);
+  color: var(--clr-navy);
   font-family: var(--ff-sans-regular);
   font-weight: 600;
+  justify-content: center;
+  padding: 12px 20px;
 }
 .gold-button {
-  color: var(--clr-gold);
-  background-color: transparent;
-  padding: 12px 20px;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  background-color: transparent;
   border: 3px solid var(--clr-gold);
+  color: var(--clr-gold);
   font-family: var(--ff-sans-regular);
   font-weight: 600;
+  justify-content: center;
+  padding: 12px 20px;
 }
 .white-button {
-  background-color: var(--clr-white);
-  padding: 12px 20px;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  background-color: var(--clr-white);
   border: 3px solid var(--clr-black);
   font-family: var(--ff-sans-regular);
   font-weight: 600;
+  justify-content: center;
+  padding: 12px 20px;
 }
 .black-button:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
   cursor: pointer;
 }
 
@@ -263,6 +263,10 @@ body {
 .w-inline-block {
   max-width: 100%;
   display: inline-block;
+}
+
+.align-left {
+  align-self: flex-start;
 }
 
 ._50-width {
@@ -505,7 +509,7 @@ body {
   position: absolute;
   top: 0px;
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
   align-items: center;
   justify-content: center;
   background-color: var(--clr-black);
@@ -513,10 +517,9 @@ body {
 
 .text-splitter {
   position: absolute;
-  top: 102vh;
+  top: 101vh;
   padding: 2.4em;
   display: flex;
-  flex-direction: column;
   line-height: 3em;
   width: 100vw;
   height: 350px;
@@ -535,7 +538,7 @@ body {
 
 .spacer {
   height: 36vh;
-  top: 1200px;
+  top: calc(101vh + 350px);
   width: 100vw;
   display: flex;
   background-color: var(--clr-navy);

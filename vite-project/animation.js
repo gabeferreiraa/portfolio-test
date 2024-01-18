@@ -64,9 +64,9 @@ const letters =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%&?'";
 
 let interval = null;
-const h1Elements = document.querySelectorAll(".hero-text h1");
-h1Elements.forEach((h1) => {
-  h1.onmouseover = (event) => {
+const spanElements = document.querySelectorAll(".hero-text span");
+spanElements.forEach((span) => {
+  span.onmouseover = (event) => {
     let iteration = 0;
 
     clearInterval(interval);

@@ -513,7 +513,7 @@ body {
 
 .text-splitter {
   position: absolute;
-  top: 100vh;
+  top: 102vh;
   padding: 2.4em;
   display: flex;
   flex-direction: column;
@@ -535,11 +535,12 @@ body {
 
 .spacer {
   height: 36vh;
-  top: 1100px;
+  top: 1200px;
   width: 100vw;
   display: flex;
   background-color: var(--clr-navy);
   position: absolute;
+  overflow: hidden;
 }
 
 .hero-text {
@@ -551,14 +552,14 @@ body {
   top: 50px;
   left: 7.5%;
 }
-.hero-text h1 {
+.hero-text span {
   color: #fff;
   font-variant-numeric: slashed-zero;
   font-family: var(--ff-mono-normal-italic);
   font-size: 2.8em;
   font-style: normal;
   font-weight: 500;
-  line-height: 0.5em;
+  line-height: 2em;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
